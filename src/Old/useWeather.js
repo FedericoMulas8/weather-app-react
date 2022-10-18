@@ -27,7 +27,7 @@ export function useWeather() {
   async function finalCall() {
     const finalResponse = await fetch(call);
     const finalData = await finalResponse.json();
-    console.log(finalData);
+    setFinalApi(finalData);
   }
 
   function handleInput({ target }) {
@@ -41,6 +41,7 @@ export function useWeather() {
 
   return {
     api,
+    finalApi,
     userInput,
     userCall,
     lat,
