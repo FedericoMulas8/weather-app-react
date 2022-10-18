@@ -141,8 +141,8 @@ export function Weather() {
                 <img src={humidity}></img>
               </div>
               <div className="outroinfo">
-                <p id="infotitle">Humidity</p>
                 <p>{data.main && data.main.humidity}%</p>
+                <p id="infotitle">Humidity</p>
               </div>
             </div>
             <div className="wind">
@@ -150,8 +150,8 @@ export function Weather() {
                 <img src={wind}></img>
               </div>
               <div className="outroinfo">
-                <p id="infotitle">Wind Speed</p>{" "}
                 <p>{data.wind && data.wind.speed}km/h</p>
+                <p id="infotitle">Wind Speed</p>{" "}
               </div>
             </div>
             <div className="pressure">
@@ -159,8 +159,8 @@ export function Weather() {
                 <img src={pressure}></img>
               </div>
               <div className="outroinfo">
-                <p id="infotitle">Pressure</p>{" "}
                 <p>{data.main && data.main.pressure}°</p>
+                <p id="infotitle">Pressure</p>{" "}
               </div>
             </div>
           </div>

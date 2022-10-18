@@ -123,9 +123,9 @@ $scaleTo: 1.7; //scale for img animation
         }
       }
 
-      // .date p {
-      //   // visibility: hidden;
-      // }
+      .info {
+        overflow: hidden;
+      }
 
       .display {
         align-items: center;
@@ -140,21 +140,13 @@ $scaleTo: 1.7; //scale for img animation
           justify-content: center;
           align-items: center;
           .display__icon {
-            // animation: name duration timing-function delay iteration-count direction fill-mode;
             animation: pulse 5s infinite;
-            // animation-name: pulse;
-            // animation-duration: 5s;
           }
           .cityAlert {
             font-size: 50px;
             font-weight: 800;
           }
         }
-
-        // .spec p {
-        //   font-size: 1.125rem;
-        //   font-weight: 500;
-        // }
       }
     }
 
@@ -331,7 +323,7 @@ $scaleTo: 1.7; //scale for img animation
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   #root {
     .container {
       padding: 0;
@@ -351,7 +343,7 @@ $scaleTo: 1.7; //scale for img animation
           }
 
           .spec #displaysecondary {
-            font-size: 1.125rem;
+            font-size: 0.9rem;
           }
         }
 
