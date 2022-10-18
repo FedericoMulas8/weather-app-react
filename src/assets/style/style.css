@@ -313,4 +313,7 @@
   #root .container .mainInfo .display .icon .cityAlert {
     font-size: 20px;
   }
+  #root .container .outro .outroContainer {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

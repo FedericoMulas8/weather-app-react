@@ -132,6 +132,7 @@ export function Weather() {
         </div>
       </div>
 
+      {/* Outro */}
       {data.main.feels_like && (
         <div className="outro">
           <div className="outroContainer">
