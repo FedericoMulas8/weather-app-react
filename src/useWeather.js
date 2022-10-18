@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 
 export function useWeather() {
+  // initial data for our state
   const [data, setData] = useState({
     name: "-",
     main: { temp: "-" },
@@ -21,7 +22,6 @@ export function useWeather() {
     }
   };
 
-  //   onChange={(event) => setLocation(event.target.value)}
   function handleInput(event) {
     setLocation(event.target.value);
   }
@@ -38,6 +38,8 @@ export function useWeather() {
     require(`./assets/img/${data.weather[0].icon.replace(/[a-z]/gi, "")}.png`);
 
   const description = data.weather && data.weather[0].description;
+
+  // creation of date
 
   let day;
   switch (new Date().getDay()) {
@@ -65,9 +67,8 @@ export function useWeather() {
 
   let today = new Date();
   let dd = String(today.getDate()).padStart(2, "0");
-  let mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+  let mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0
   let yyyy = today.getFullYear();
-
   today = mm + "/" + dd + "/" + yyyy;
 
   return {

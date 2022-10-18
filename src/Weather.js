@@ -118,10 +118,3 @@ export function Weather() {
     </div>
   );
 }
-
-/* 
-Clouds
-
-
-far corrispondere alle mie icon i valori di openweather
-*/

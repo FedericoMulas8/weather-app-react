@@ -241,7 +241,7 @@
   #root .container .mainInfo .info #displaytitle,
 #root .container .mainInfo .display #displaytitle,
 #root .container .mainInfo .weather #displaytitle {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 800;
   }
   #root .container .mainInfo .info #displaysecondary,
