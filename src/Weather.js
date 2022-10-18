@@ -74,7 +74,7 @@ export function Weather() {
           <div className="feel">
             {data.main && (
               <p id="displaysecondary">
-                {data.main.feels_like && `Feel like: ${feelLike}`}
+                {data.main.feels_like && `Feels like: ${feelLike}`}
               </p>
             )}
           </div>
