@@ -9,7 +9,7 @@ export function useWeather() {
   });
   const [location, setLocation] = useState("");
 
-  const apiKey = "d2077362b591c2e1b040194260639109";
+  const apiKey = //your api key;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
 
   const searchLocation = (event) => {
